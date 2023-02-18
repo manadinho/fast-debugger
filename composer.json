@@ -1,0 +1,34 @@
+{
+    "name": "manadinho/fast-debugger",
+    "description": "Utilize FastDebugger to swiftly resolve issues through debugging.",
+    "type": "library",
+    "version": "1.0.0",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Manadinho\\FastDebugger\\": "src/"
+        },
+        "files" : ["src/helpers.php"]
+    },
+    "authors": [
+        {
+            "name": "muhammad imran",
+            "email": "mimranisrar6@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {
+        "php": "^7.4 | ^8.0"
+    },
+    "require-dev": {
+        "textalk/websocket": "^1.6"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Manadinho\\FastDebugger\\FastDebuggerServiceProvider"
+            ]
+        }
+    }
+}
